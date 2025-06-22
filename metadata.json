@@ -1,0 +1,6 @@
+{
+  "name": "CBNPC Assistant 2025",
+  "description": "An interactive diagnostic assistant for Non-Small Cell Lung Cancer (NSCLC) based on the 2025 Auvergne Rhône-Alpes medical guidelines. This tool helps clinicians navigate treatment algorithms based on cancer stage, patient characteristics, and molecular profiles.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
