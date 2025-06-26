@@ -1,5 +1,6 @@
 {
   "name": "Aide au Diagnostic CBNPC",
   "description": "Une application d'aide à la décision pour le diagnostic et le traitement du cancer bronchique non à petites cellules (CBNPC) basée sur les référentiels Auvergne Rhône-Alpes en Oncologie Thoracique 2025. L'application guide les utilisateurs à travers différents stades cliniques et options thérapeutiques.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "prompt": ""
 }
