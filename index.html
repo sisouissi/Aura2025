@@ -1,26 +1,50 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CBNPC Assistant 2025</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="icon" href="https://img.icons8.com/plasticine/100/lungs.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application d'aide au Diagnostic et Traitement du CBNPC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        scrollbar-width: thin;
+        scrollbar-color: #764ba2 #e2e8f0; /* thumb track */
+        background-color: #f1f5f9; /* A neutral background like slate-100 */
+      }
+      body::-webkit-scrollbar {
+        width: 8px;
+      }
+      body::-webkit-scrollbar-track {
+        background: #e2e8f0; /* slate-200 */
+      }
+      body::-webkit-scrollbar-thumb {
+        background-color: #7c3aed; /* purple-600 */
+        border-radius: 10px;
+        border: 2px solid #e2e8f0; /* slate-200 */
+      }
+      @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+      }
+      .animate-fadeIn {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+    </style>
 <script type="importmap">
 {
   "imports": {
-    "react": "https://esm.sh/react@^19.1.0",
-    "lucide-react": "https://esm.sh/lucide-react@^0.522.0",
-    "react/": "https://esm.sh/react@^19.1.0/",
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/"
+    "react": "https://esm.sh/react@19.1.0",
+    "react-dom/client": "https://esm.sh/react-dom@19.1.0/client",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/"
   }
 }
 </script>
 <link rel="stylesheet" href="/index.css">
 </head>
-<body class="bg-gray-100">
-  <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
+<body class="min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
 </body>
 </html>

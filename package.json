@@ -1,5 +1,5 @@
 {
-  "name": "cbnpc-assistant-2025",
+  "name": "aide-au-diagnostic-cbnpc",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "react": "^19.1.0",
-    "lucide-react": "^0.522.0",
+    "react-dom/client": "19.1.0",
     "react-dom": "^19.1.0"
   },
   "devDependencies": {
