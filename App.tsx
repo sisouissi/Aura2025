@@ -44,7 +44,7 @@ const App = (): JSX.Element => {
 
   const IntroductoryContent = (): JSX.Element => (
     <div className="p-6 md:p-10 text-slate-700 animate-fadeIn">
-      <h2 className="text-2xl md:text-3xl font-semibold text-purple-700 mb-6">
+      <h2 className="text-2xl md:text-3xl font-semibold text-sky-700 mb-6">
         Bienvenue à l'Application d'Aide au Diagnostic et Traitement du CBNPC
       </h2>
       <p className="mb-4 text-lg">
@@ -53,7 +53,7 @@ const App = (): JSX.Element => {
       <p className="mb-4">
         Elle s'appuie sur les <strong className="font-semibold">Référentiels Auvergne Rhône-Alpes en Oncologie Thoracique 2025</strong>, fruit d'un travail collaboratif d'experts de la région, coordonné par l'association ARISTOT. Ces référentiels visent à harmoniser et optimiser la prise en charge des patients.
       </p>
-      <div className="mt-6 p-4 border-l-4 border-red-500 bg-red-50 rounded-lg shadow">
+      <div className="mt-6 p-4 border-l-4 border-red-500 bg-red-50 rounded-lg shadow-md">
         <h3 className="text-xl font-semibold text-red-700 mb-2">Avertissement Important</h3>
         <p className="text-red-600">
           Cette application est proposée à titre <strong className="font-semibold">pédagogique et informatif</strong>. Elle est destinée à servir d'aide-mémoire et de support à la décision clinique.
@@ -63,20 +63,20 @@ const App = (): JSX.Element => {
         </p>
       </div>
       <p className="mt-6 text-sm text-slate-500">
-        Pour commencer, veuillez sélectionner un stade clinique dans la barre latérale gauche.
+        Pour commencer, veuillez sélectionner un stade clinique dans la barre latérale.
       </p>
     </div>
   );
 
   return (
-    <div className="min-h-screen flex flex-col">
-      <header className="bg-gradient-to-r from-purple-600 to-indigo-700 text-white p-4 md:p-5 text-center shadow-md sticky top-0 z-50">
-        <h1 className="text-xl md:text-2xl lg:text-3xl font-bold tracking-tight">Application d'aide au Diagnostic et Traitement du CBNPC</h1>
+    <div className="min-h-screen flex flex-col bg-slate-50">
+      <header className="bg-gradient-to-r from-sky-500 via-sky-600 to-sky-700 text-white p-6 md:p-8 text-center shadow-md sticky top-0 z-50">
+        <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold tracking-tight">Application d'aide au Diagnostic et Traitement du CBNPC</h1>
         <a
           href="https://referentiels-aristot.com/wp-content/uploads/01_CBNPC_2025.pdf"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs md:text-sm opacity-90 hover:opacity-100 hover:underline"
+          className="text-sm md:text-base text-sky-100 hover:text-white hover:underline transition-colors duration-200 mt-2 block"
         >
           Basée sur les Référentiels Auvergne Rhône-Alpes en Oncologie Thoracique 2025
         </a>
@@ -84,7 +84,7 @@ const App = (): JSX.Element => {
 
       <div className="flex flex-1 flex-col md:flex-row">
         {/* Sidebar */}
-        <aside className="w-full md:w-1/3 lg:w-1/4 bg-slate-50 p-4 md:p-6 border-r border-slate-200 shadow-lg md:min-h-screen md:sticky md:top-[calc(4rem+1px)] self-start overflow-y-auto"> {/* Adjust top based on header height */}
+        <aside className="w-full md:w-1/3 lg:w-1/4 bg-white p-4 md:p-6 border-r border-slate-200 shadow-lg md:min-h-screen md:sticky md:top-[calc(6rem+1px)] self-start overflow-y-auto"> {/* Adjusted top for increased header padding and subtitle margin. Estimate new header height. */}
           <StageSelector stages={STAGES} onSelectStage={handleSelectStage} activeStageId={activeStageId} />
         </aside>
 
@@ -108,7 +108,7 @@ const App = (): JSX.Element => {
       {currentNodeId && (
         <button
           onClick={resetApp}
-          className="fixed bottom-6 right-6 md:bottom-10 md:right-10 py-3 px-6 bg-red-500 text-white rounded-full font-semibold cursor-pointer shadow-xl hover:bg-red-600 hover:-translate-y-0.5 transform transition-all duration-300 z-50 flex items-center gap-2"
+          className="fixed bottom-6 right-6 md:bottom-10 md:right-10 py-3 px-6 bg-red-600 text-white rounded-full font-semibold cursor-pointer shadow-xl hover:bg-red-700 hover:-translate-y-0.5 transform transition-all duration-300 z-50 flex items-center gap-2"
           aria-label="Recommencer la navigation"
         >
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">

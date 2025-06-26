@@ -16,10 +16,10 @@ const Breadcrumb = ({ path }: BreadcrumbProps): JSX.Element | null => {
       <ol className="flex flex-wrap items-center gap-2 sm:gap-4">
         {path.map((item, index) => (
           <li key={item.nodeId + index} className="flex items-center">
-            <span className={`px-3 py-1.5 text-xs sm:text-sm font-medium rounded-full
+            <span className={`px-3 py-1.5 text-xs sm:text-sm font-medium rounded-lg shadow-sm
               ${index === path.length - 1 
-                ? 'bg-gradient-to-r from-purple-500 to-indigo-600 text-white shadow-sm' 
-                : 'bg-slate-100 text-slate-600 hover:bg-slate-200'
+                ? 'bg-sky-600 text-white' 
+                : 'bg-slate-200 text-slate-700 hover:bg-slate-300'
               }
             `}>
               {item.label}

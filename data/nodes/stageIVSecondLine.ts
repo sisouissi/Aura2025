@@ -73,7 +73,7 @@ export const STAGE_IV_SECOND_LINE_NODES: Record<string, NodeData> = {
         items: [
           { title: 'Teliso-V en AAC', detailsArray: [{text: "Anticorps conjugué anti-cMET disponible en Autorisation d'Accès Compassionnel (AAC)"}] },
         ],
-        accentColorClass: 'border-l-teal-500', backgroundColorClass: 'bg-teal-50', titleColorClass: 'text-teal-800', textColorClass: 'text-slate-700',
+        accentColorClass: 'border-l-sky-500', backgroundColorClass: 'bg-sky-50', titleColorClass: 'text-sky-800', textColorClass: 'text-slate-700',
       },
     ],
   },
