@@ -8,7 +8,7 @@ interface StageSelectorProps {
   activeStageId: string | null;
 }
 
-const StageSelector = ({ stages, onSelectStage, activeStageId }: StageSelectorProps): JSX.Element => {
+export const StageSelector = ({ stages, onSelectStage, activeStageId }: StageSelectorProps): JSX.Element => {
   return (
     <div className="mb-6 md:mb-10">
       <h2 className="text-xl font-semibold text-sky-700 mb-4 text-center md:text-left">
@@ -38,5 +38,3 @@ const StageSelector = ({ stages, onSelectStage, activeStageId }: StageSelectorPr
     </div>
   );
 };
-
-export default StageSelector;

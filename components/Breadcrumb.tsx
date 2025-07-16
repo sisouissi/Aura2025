@@ -6,7 +6,7 @@ interface BreadcrumbProps {
   path: BreadcrumbEntry[];
 }
 
-const Breadcrumb = ({ path }: BreadcrumbProps): JSX.Element | null => {
+export const Breadcrumb = ({ path }: BreadcrumbProps): JSX.Element | null => {
   if (path.length === 0) {
     return null;
   }
@@ -42,5 +42,3 @@ const Breadcrumb = ({ path }: BreadcrumbProps): JSX.Element | null => {
     </nav>
   );
 };
-
-export default Breadcrumb;

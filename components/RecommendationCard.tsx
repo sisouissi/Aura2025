@@ -16,7 +16,7 @@ const renderDetails = (details: TreatmentItemDetail[]): JSX.Element[] => {
 };
 
 
-const RecommendationCard = ({ blocks }: RecommendationCardProps): JSX.Element | null => {
+export const RecommendationCard = ({ blocks }: RecommendationCardProps): JSX.Element | null => {
   if (!blocks || blocks.length === 0) {
     return null;
   }
@@ -64,5 +64,3 @@ const RecommendationCard = ({ blocks }: RecommendationCardProps): JSX.Element | 
     </>
   );
 };
-
-export default RecommendationCard;

@@ -1,4 +1,3 @@
-
 export interface BreadcrumbEntry {
   nodeId: string;
   label: string;
@@ -52,3 +51,14 @@ export interface Stage {
 }
 
 export type DecisionTree = Record<string, NodeData>;
+
+export interface GroundingSource {
+  uri: string;
+  title: string;
+}
+
+export interface ChatMessage {
+  role: 'user' | 'model';
+  text: string;
+  sources?: GroundingSource[];
+}

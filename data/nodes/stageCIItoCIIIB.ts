@@ -152,9 +152,9 @@ export const STAGE_CII_CIIIB_NODES: Record<string, NodeData> = {
       {
         title: 'Chimiothérapie adjuvante',
         items: [
-          { detailsArray: [{text: '• Cisplatine + Vinorelbine x4'}]},
-          { detailsArray: [{text: '• Cisplatine-pemetrexed 4 cycles dans les non-épidermoïdes', isOptionLabel: true}]},
-          { detailsArray: [{text: '• Carboplatine-paclitaxel si CI au cisplatine vinorelbine', isOptionLabel: true}]},
+          { detailsArray: [{text: '• Cisplatine + Vinorelbine x4'}] },
+          { detailsArray: [{text: '• Cisplatine-pemetrexed 4 cycles dans les non-épidermoïdes', isOptionLabel: true}] },
+          { detailsArray: [{text: '• Carboplatine-paclitaxel si CI au cisplatine vinorelbine', isOptionLabel: true}] },
         ],
         accentColorClass: 'border-l-sky-600',
         backgroundColorClass: 'bg-sky-50',

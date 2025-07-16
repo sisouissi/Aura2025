@@ -7,7 +7,7 @@ interface QuestionCardProps {
   onOptionClick: (option: DecisionOption) => void;
 }
 
-const QuestionCard = ({ questionPayload, onOptionClick }: QuestionCardProps): JSX.Element | null => {
+export const QuestionCard = ({ questionPayload, onOptionClick }: QuestionCardProps): JSX.Element | null => {
   if (!questionPayload) {
     return null;
   }
@@ -40,5 +40,3 @@ const QuestionCard = ({ questionPayload, onOptionClick }: QuestionCardProps): JS
     </div>
   );
 };
-
-export default QuestionCard;
