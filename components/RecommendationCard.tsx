@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { RecommendationBlock, TreatmentItem, TreatmentItemDetail } from '../types';
 
@@ -6,7 +5,7 @@ interface RecommendationCardProps {
   blocks: RecommendationBlock[];
 }
 
-const renderDetails = (details: TreatmentItemDetail[]): JSX.Element[] => {
+const renderDetails = (details: TreatmentItemDetail[]): React.ReactNode => {
   return details.map((detail, index) => (
     <React.Fragment key={index}>
       {detail.isOptionLabel && <span className="block text-green-600 font-semibold mt-2 mb-1">Option :</span>}

@@ -69,7 +69,10 @@ export const App = (): JSX.Element => {
         </p>
       </div>
       <p className="mt-6 text-sm text-slate-500">
-        Pour commencer, vous pouvez soit sélectionner un stade clinique dans la barre latérale pour parcourir l'arbre décisionnel, soit poser directement votre question à notre assistant IA en cliquant sur l'icône en bas à droite. Ses réponses sont basées exclusivement sur les référentiels.
+        Pour commencer, vous pouvez soit sélectionner un stade clinique dans la barre latérale pour parcourir l'arbre décisionnel, soit poser directement votre question à notre assistant IA en cliquant sur l'icône en bas à droite.
+      </p>
+      <p className="mt-4 text-sm text-slate-500">
+        Ses réponses sont basées exclusivement sur les référentiels.
       </p>
     </div>
   );
