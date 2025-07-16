@@ -1,23 +1,17 @@
 {
-  "name": "aide-au-diagnostic-cbnpc",
+  "name": "aide-diagnostic-cbnpc",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+  "description": "Une application d'aide à la décision pour le diagnostic et le traitement du cancer bronchique non à petites cellules (CBNPC) basée sur les référentiels Auvergne Rhône-Alpes en Oncologie Thoracique 2025. L'application guide les utilisateurs à travers différents stades cliniques et options thérapeutiques.",
   "dependencies": {
-    "react": "18.3.1",
-    "@google/genai": "latest",
-    "react-markdown": "9.0.1",
-    "remark-gfm": "4.0.0",
-    "react-dom": "18.3.1"
+    "@google/genai": "^0.14.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-markdown": "^9.0.1",
+    "remark-gfm": "^4.0.0"
   },
-  "devDependencies": {
-    "@types/node": "^22.14.0",
-    "typescript": "~5.7.2",
-    "vite": "^6.2.0"
+  "engines": {
+    "node": "18.x",
+    "npm": ">=8.0.0"
   }
 }
